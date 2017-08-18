@@ -1,0 +1,6 @@
+<%parts.each do |x|%>
+<form action="/correct">
+        <p><input type="checkbox" value="<%=x%>" name="toppings[]"><%=x%></p>
+    <%end%>
+    <input type="submit" value="These are correct!">
+</form>
