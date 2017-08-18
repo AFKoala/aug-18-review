@@ -9,12 +9,6 @@ post '/build' do
   erb :complete, :locals=>{:parts=>parts}
 end
 
-post '/complete' do
-  parts = params[:parts]
-  toppings = params[:toppings]
-  erb :correct, :locals=>{:parts=>parts, :toppings=>toppings}
-end
-
 get '/correct' do
     parts = params[:parts]
     toppings = params[:toppings]
