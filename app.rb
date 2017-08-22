@@ -22,3 +22,10 @@ get '/correct' do
   toppings = params[:toppings]
   erb :results, :locals=>{:toppings=>toppings}
 end
+
+get '/results' do
+  parts = params[:parts]
+  toppings = params[:toppings]
+  final = params[:final]
+  erb :results, :locals=>{:parts=>parts, :toppings=>toppings, :final=>final}
+end
